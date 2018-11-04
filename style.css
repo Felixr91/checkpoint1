@@ -1,0 +1,112 @@
+.bg-image{
+  background-image: url("images/kame-house-background.jpg");
+  background-position: 50% 80%;
+}
+
+.logo {
+  width: 430px;
+  height: 100px;
+}
+
+.goku-image{
+  height: 200px;
+  width: auto;
+}
+
+.vil-image{
+  height: 300px;
+  width: auto;
+}
+
+.cell-hide{
+  visibility: hidden;
+}
+
+.goku-icon{
+  height: 100px;
+  width: auto;
+}
+
+.vil-icon{
+  height: 100px;
+  width: auto;
+}
+
+#vilprogress{
+  transform: rotate(90deg);
+transform: scaleX(-1);
+}
+
+.vilbuttonhide{
+  visibility: hidden;
+}
+
+.gokubuttonhide{
+  visibility: hidden;
+}
+
+.icon-hidden{
+  visibility: hidden;
+}
+
+.buu-sizing{
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-self:end;
+}
+
+.freiza-sizing{
+  height: 200px;
+  width: auto;
+  padding-top: 22px;
+}
+
+.goldenfreiza-sizing{
+  padding-top: 100px;
+  height: 200px;
+  width: auto;
+}
+
+.jiren-sizing{
+  padding-top: 50px;
+  height: 250px;
+  width: auto;
+  display: flex;
+  align-self:end;
+}
+
+.gokussj-sizing {
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-self: end;
+}
+
+.gokussj2-sizing{
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-self:end;
+}
+
+.gokussj3-sizing{
+  padding-top: 50px;
+  height: 250px;
+  width:auto;
+  display: flex;
+  align-self:end;
+}
+
+.gokublue-sizing{
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-self:end;
+}
+
+.item-sizing{
+  height: 50px;
+  width: auto;
+  padding: 10px;
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <title>DBZ FIGHT!</title>
+</head>
+
+<body class="bg-image">
+  <div class="container-fluid">
+    <!-- GOKU BUTTONS -->
+    <div class="row ">
+      <div class="col-4 d-flex justify-content-around align-items-center">
+        <button id="gokupunch" class="btn btn-warning">Punch</button>
+        <button id="gokukick" class="btn btn-warning">Kick</button>
+        <button id="gokublast" class="btn btn-warning">Blast!</button>
+        <button id="gokutransformbtn" class="btn btn-danger gokubuttonhide">TRANSFORM</button>
+      </div>
+      <!-- LOGO -->
+      <div class="col-4 d-flex justify-content-center">
+        <img class="logo" src="images/DBZ-logo.png" alt="">
+      </div>
+      <!-- CELL BUTTONS-->
+      <div class="col-4 d-flex justify-content-around align-items-center">
+        <button id="vilpunch" class="btn btn-info">Punch</button>
+        <button id="vilkick" class="btn btn-info">Kick</button>
+        <button id="vilblast" class="btn btn-info">Blast!</button>
+        <button id="viltransformbtn" class="btn btn-danger viltransformbtn vilbuttonhide">TRANSFORM</button>
+      </div>
+    </div>
+    <!-- PLAYER INFO and ICONS-->
+    <div class="row">
+
+      <div class="col-1 goku-icon" id="goku-icon">
+        <img class="goku-icon" src="images/goku-icon.png" alt="">
+      </div>
+      <div class="col-5 d-flex align-items-center goku-name pl-4" id="gokutextname">
+        <h1>Goku</h1>
+      </div>
+      <div class="col-5 d-flex justify-content-end align-items-center vil-name" id="viltextname">
+        <h1>Cell</h1>
+      </div>
+      <div class="col-1 d-flex justify-content-end" id="vil-icon">
+        <img class="vil-icon" src="images/cell-icon.png" alt="">
+      </div>
+    </div>
+    <!-- PROGRESS BAR-->
+    <div class="row pb-5">
+      <div class="col-5 offset-1">
+        <div class="progress" style="height: 25px" id="gokuprogress">
+          <div class="gokuprogress progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+            style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="progress" id="vilprogress" style="height: 25px">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%"
+            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+
+    </div>
+    <!--CHARACTERS-->
+    <div class="row pt-5">
+      <!--goku items-->
+      <div class="col-1 items">
+        <div id="gokudragonball">
+          <img class="item-sizing" src="images/dragonball.png" alt="">
+        </div>
+        <div id="gokusenzubean">
+          <img class="item-sizing" src="images/senzu-bean.png" alt="">
+        </div>
+        <div>
+          <img class="item-sizing" src="images/capsule.png" alt="">
+        </div>
+      </div>
+      <!--goku character-->
+      <div class="col-3 offset-1 d-flex align-items-end" id="gokuimage">
+        <img class="goku-image" src="images/goku.gif" alt="">
+      </div>
+      <!--Winner alert-->
+      <div class="col-3">
+        <h2>PLAYER ONE WINS!</h2>
+      </div>
+      <!--Villian character-->
+      <div class="col-3 d-flex align-items-end pl-5" id="vimage">
+        <img class="vil-image " src="images/cell.gif" alt="">
+      </div>
+      <!--villian items-->
+      <div class="col-1 items">
+        <div class="col-1 items">
+          <div id="gokudragonball">
+            <img class="item-sizing" src="images/dragonball.png" alt="">
+          </div>
+          <div id="gokusenzubean">
+            <img class="item-sizing" src="images/senzu-bean.png" alt="">
+          </div>
+          <div>
+            <img class="item-sizing" src="images/capsule.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
