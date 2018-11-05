@@ -1,7 +1,7 @@
 var goku = {
   health: 100,
   attacks: {
-    punch: 10,
+    punch: 5,
     kick: 15,
     blast: Math.floor((Math.random() * 25)),
   },
@@ -68,12 +68,24 @@ function checkKeyPressed(evt) {
     return villiancapsule();
   }
 }
-
+/*
 function gpunch() {
   villian.health -= goku.attacks.punch;
   goku.hitcount += 1;
   vilprogressbar();
 }
+*/
+
+function gpunch() {
+  if (goku.transformations < 3) {
+    villian.health -= 5;
+  } else {
+    villian.health -= 10;
+  }
+  goku.hitcount += 1;
+  vilprogressbar();
+}
+
 
 function vpunch() {
   goku.health -= villian.attacks.punch;
@@ -82,8 +94,12 @@ function vpunch() {
 }
 
 function gkick() {
-  villian.health -= goku.attacks.kick;
-  goku.hitcoutn += 1;
+  if (goku.transformations < 3) {
+    villian.health -= 15;
+  } else {
+    villian.health -= 20;
+  }
+  goku.hitcount += 1;
   vilprogressbar();
 }
 
