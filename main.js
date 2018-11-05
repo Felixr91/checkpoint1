@@ -30,6 +30,11 @@ var modify = {
   }
 }
 
+setInterval(function () {
+  goku.health -= Math.floor((Math.random() * 30));
+  gokuprogressbar();
+}, 1500);
+
 window.addEventListener("keydown", checkKeyPressed, false);
 
 function checkKeyPressed(evt) {
@@ -184,7 +189,10 @@ function gtransform() {
   var cssdisplay = ["goku-image", "gokussj-sizing", "gokussj2-sizing", "gokussj3-sizing", "gokublue-sizing"];
   var select = ["Goku", "Super Saiyan Goku", "Super Saiyan 2 Goku", "Super Saiyan 3 Goku", "SSJ God Blue Goku"];
 
-  gokutransformplusone();
+  if (goku.transformations <= 4) {
+    gokutransformplusone();
+  }
+
 
   document.getElementById("gokuimage").innerHTML = `
   <img class=${cssdisplay[goku.transformations]} src=${charimages[goku.transformations]} alt="">
